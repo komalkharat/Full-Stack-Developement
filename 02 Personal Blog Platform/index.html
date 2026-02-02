@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Blog Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Personal Blog Platform</h1>
+    <p>Share your thoughts with the world</p>
+</header>
+
+<div class="container">
+
+    <div class="blog-form">
+        <h2>Create New Blog</h2>
+        <input type="text" id="title" placeholder="Blog Title">
+        <textarea id="content" rows="5" placeholder="Write your blog content..."></textarea>
+        <button onclick="addPost()">Post Blog</button>
+    </div>
+
+    <div id="posts"></div>
+
+</div>
+
+<footer>
+    <p>© 2026 Personal Blog Platform</p>
+</footer>
+
+<script>
+    function addPost() {
+        let title = document.getElementById("title").value;
+        let content = document.getElementById("content").value;
+
+        if (title === "" || content === "") {
+            alert("Please fill all fields");
+            return;
+        }
+
+        let postDiv = document.createElement("div");
+        postDiv.className = "post";
+
+        postDiv.innerHTML = `
+            <h3>${title}</h3>
+            <p>${content}</p>
+        `;
+
+        document.getElementById("posts").prepend(postDiv);
+
+        document.getElementById("title").value = "";
+        document.getElementById("content").value = "";
+    }
+</script>
+
+</body>
+</html>

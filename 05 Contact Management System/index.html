@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>📇 My Contacts</h1>
+    <p class="subtitle">Manage your contacts easily</p>
+
+    <div class="contact-form">
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="text" id="phone" placeholder="Phone Number">
+        <input type="email" id="email" placeholder="Email Address">
+        <button onclick="addContact()">➕ Add Contact</button>
+    </div>
+
+    <input type="text" id="search" placeholder="🔍 Search contacts..." onkeyup="searchContacts()">
+
+    <div id="contactList" class="contacts"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

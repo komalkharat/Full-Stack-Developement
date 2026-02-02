@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+}
+
+.header p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #667eea;
+  font-weight: 500;
+}
+
+/* Sections */
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.bg {
+  background: #ffffff;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skills span {
+  background: #667eea;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Timeline */
+.timeline {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+}
+
+.timeline li {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid #667eea;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}

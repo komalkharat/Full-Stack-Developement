@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Notes Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Online Notes Manager</h1>
+    <p>Save and manage your notes easily</p>
+</header>
+
+<div class="container">
+
+    <div class="note-form">
+        <input type="text" id="noteTitle" placeholder="Note Title">
+        <textarea id="noteContent" rows="5" placeholder="Write your note..."></textarea>
+        <button onclick="addNote()">Add Note</button>
+    </div>
+
+    <div id="notes"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creative To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Login Card -->
+    <div id="loginCard" class="card">
+        <h2>✨ Welcome Back</h2>
+        <p>Login to manage your tasks</p>
+        <input type="text" id="username" placeholder="Enter username">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- To-Do Card -->
+    <div id="todoCard" class="card hidden">
+        <h2>Hello, <span id="user"></span> 👋</h2>
+
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="What’s your task today?">
+            <button onclick="addTask()">➕</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <button class="logout" onclick="logout()">Logout</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
