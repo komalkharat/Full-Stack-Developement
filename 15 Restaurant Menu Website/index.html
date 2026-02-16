@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlavorFiesta - Restaurant Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍽 FlavorFiesta</h1>
+    <div class="cart">
+        🛒 Cart: <span id="cartCount">0</span>
+    </div>
+</header>
+
+<div class="filters">
+    <button onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('starters')">Starters</button>
+    <button onclick="filterMenu('main')">Main Course</button>
+    <button onclick="filterMenu('desserts')">Desserts</button>
+    <button onclick="filterMenu('drinks')">Drinks</button>
+</div>
+
+<div class="menu-container" id="menuContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

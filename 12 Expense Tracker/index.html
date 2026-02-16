@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoneyMate - Expense Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>💰 MoneyMate</h2>
+    <p>Track your money like a pro 🚀</p>
+
+    <div class="balance">
+        <h3>Your Balance</h3>
+        <h1 id="balance">₹0.00</h1>
+    </div>
+
+    <div class="summary">
+        <div class="income">
+            <h4>Income</h4>
+            <p id="income">₹0.00</p>
+        </div>
+        <div class="expense">
+            <h4>Expense</h4>
+            <p id="expense">₹0.00</p>
+        </div>
+    </div>
+
+    <h3>Add Transaction</h3>
+
+    <input type="text" id="text" placeholder="Enter description...">
+    <input type="number" id="amount" placeholder="Enter amount (+ income, - expense)">
+
+    <button onclick="addTransaction()">Add</button>
+
+    <h3>History</h3>
+    <ul id="list"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

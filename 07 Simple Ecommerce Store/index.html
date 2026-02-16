@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Mart - Creative Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛍️ Mini Mart</h1>
+    <div class="cart">
+        🛒 Cart: <span id="cart-count">0</span>
+    </div>
+</header>
+
+<section class="products">
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Sneakers">
+        <h3>Cool Sneakers</h3>
+        <p class="price">₹1999</p>
+        <button onclick="addToCart('Cool Sneakers', 1999)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Watch">
+        <h3>Stylish Watch</h3>
+        <p class="price">₹2499</p>
+        <button onclick="addToCart('Stylish Watch', 2499)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1518444065439-e933c06ce9cd" alt="Headphones">
+        <h3>Wireless Headphones</h3>
+        <p class="price">₹2999</p>
+        <button onclick="addToCart('Wireless Headphones', 2999)">Add to Cart</button>
+    </div>
+
+</section>
+
+
+<div id="popup" class="popup"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

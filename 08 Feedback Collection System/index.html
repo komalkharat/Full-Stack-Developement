@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>💬 We Value Your Feedback</h2>
+    <p>Your opinion helps us improve 🚀</p>
+
+    <form id="feedbackForm">
+
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <select id="category" required>
+            <option value="">Select Category</option>
+            <option>Website Experience</option>
+            <option>Product Quality</option>
+            <option>Customer Support</option>
+        </select>
+
+        <!-- Star Rating -->
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+        </div>
+
+        <!-- Emoji Mood -->
+        <div class="emoji">
+            <span data-mood="Happy">😍</span>
+            <span data-mood="Neutral">😐</span>
+            <span data-mood="Sad">😢</span>
+        </div>
+
+        <textarea id="message" placeholder="Write your feedback here..." maxlength="200" required></textarea>
+        <small id="counter">0 / 200</small>
+
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+
+    <div id="thankYou" class="thankyou"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

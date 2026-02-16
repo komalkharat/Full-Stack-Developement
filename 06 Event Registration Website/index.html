@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Epic Event Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>🎉 Register for the Ultimate Event</h2>
+    <p class="funny-message">Warning: This event may cause extreme fun 🤪</p>
+
+    <form id="eventForm">
+
+        <input type="text" id="name" placeholder="Your Awesome Name" required>
+        <input type="email" id="email" placeholder="Your Legendary Email" required>
+        
+        <select id="role" required>
+            <option value="">Select Your Role</option>
+            <option>🔥 Tech Genius</option>
+            <option>🎨 Creative Mind</option>
+            <option>🤖 AI Wizard</option>
+            <option>🎤 Public Speaker</option>
+        </select>
+
+        <input type="number" id="age" placeholder="Your Age (No lying 👀)" required>
+
+        <button type="submit">🚀 Register Now</button>
+
+    </form>
+
+    <div class="success" id="successMessage"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

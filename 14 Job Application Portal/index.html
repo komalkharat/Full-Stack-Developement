@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HireHub - Job Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>💼 HireHub</h1>
+    <p>Find your dream job today 🚀</p>
+
+    <div class="job-list" id="jobList"></div>
+
+    <h3>📂 Applied Jobs</h3>
+    <ul id="appliedList"></ul>
+</div>
+
+<!-- Application Modal -->
+<div class="modal" id="applicationModal">
+    <div class="modal-content">
+        <h3>Apply for Job</h3>
+        <input type="text" id="applicantName" placeholder="Your Name">
+        <input type="email" id="applicantEmail" placeholder="Your Email">
+        <button onclick="submitApplication()">Submit Application</button>
+        <button class="close-btn" onclick="closeModal()">Cancel</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
