@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ResumeCraft - Professional Resume Builder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay-bg"></div>
+
+    <header>
+        <h1>ResumeCraft</h1>
+        <p>Design. Build. Impress.</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Form Section -->
+        <div class="card form-section">
+            <h2>Build Your Resume</h2>
+
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="phone" placeholder="Phone Number">
+            <textarea id="summary" placeholder="Professional Summary"></textarea>
+            <textarea id="skills" placeholder="Skills (comma separated)"></textarea>
+            <textarea id="education" placeholder="Education"></textarea>
+            <textarea id="experience" placeholder="Experience"></textarea>
+
+            <button onclick="generateResume()">Generate Resume</button>
+        </div>
+
+        <!-- Resume Preview -->
+        <div class="card resume-section">
+            <h2>Resume Preview</h2>
+            <div id="resumeOutput" class="resume-output">
+                <p>Your resume will appear here...</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

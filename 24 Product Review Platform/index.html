@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ReviewVista - Product Review Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Overlay -->
+    <div class="overlay"></div>
+
+    <header>
+        <h1>ReviewVista</h1>
+        <p>See the Product. Feel the Experience.</p>
+    </header>
+
+    <section class="container">
+
+        <!-- Review Form -->
+        <div class="card form-card">
+            <h2>Add Product Review</h2>
+
+            <input type="text" id="productName" placeholder="Product Name">
+            <input type="text" id="userName" placeholder="Your Name">
+
+            <div class="rating">
+                <span data-value="1">★</span>
+                <span data-value="2">★</span>
+                <span data-value="3">★</span>
+                <span data-value="4">★</span>
+                <span data-value="5">★</span>
+            </div>
+
+            <textarea id="reviewText" placeholder="Write your review..."></textarea>
+
+            <label class="upload-label">
+                Upload Product Image
+                <input type="file" id="productImage" accept="image/*">
+            </label>
+
+            <button onclick="addReview()">Submit Review</button>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="card reviews-card">
+            <h2>Latest Reviews</h2>
+            <div id="reviewsContainer"></div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

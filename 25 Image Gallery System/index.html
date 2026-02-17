@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PixelVault - Image Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background -->
+    <div class="overlay"></div>
+
+    <header>
+        <h1>PixelVault</h1>
+        <p>Creative Image Gallery System</p>
+    </header>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('tech')">Tech</button>
+        <button onclick="filterImages('travel')">Travel</button>
+    </div>
+
+    <!-- Gallery -->
+    <section class="gallery" id="gallery">
+
+        <!-- Nature Images -->
+        <div class="image-card nature">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" onclick="openModal(this.src)">
+        </div>
+
+        <div class="image-card nature">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" onclick="openModal(this.src)">
+        </div>
+
+        <div class="image-card nature">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" onclick="openModal(this.src)">
+        </div>
+
+        <div class="image-card nature">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" onclick="openModal(this.src)">
+        </div>
+
+        <!-- Tech Images -->
+        <div class="image-card tech">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" onclick="openModal(this.src)">
+        </div>
+
+        <div class="image-card tech">
+            <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" onclick="openModal(this.src)">
+        </div>
+
+        <div class="image-card tech">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" onclick="openModal(this.src)">
+        </div>
+
+        <!-- Travel Images -->
+        <div class="image-card travel">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" onclick="openModal(this.src)">
+        </div>
+
+        <div class="image-card travel">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" onclick="openModal(this.src)">
+        </div>
+
+        <div class="image-card travel">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" onclick="openModal(this.src)">
+        </div>
+
+    </section>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">×</span>
+        <img id="modalImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

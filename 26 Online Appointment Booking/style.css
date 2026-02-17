@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1492724441997-5dc865305da7") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+}
+
+.overlay h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.overlay p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.overlay button {
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    background: #ff6b6b;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.overlay button:hover {
+    background: #ff4757;
+    transform: scale(1.1);
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background: url("https://images.unsplash.com/photo-1508780709619-79562169bc64") no-repeat center center/cover;
+    color: white;
+}
+
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    width: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+    color: black;
+    transition: 0.4s;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0;
+}
+
+.card p {
+    padding: 0 15px 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* Booking Section */
+.booking {
+    padding: 60px 20px;
+    background: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #1e90ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #3742fa;
+}
+
+/* Footer */
+footer {
+    background: #2f3542;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

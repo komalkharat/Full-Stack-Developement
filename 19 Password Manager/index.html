@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SecureVault - Password Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔐 SecureVault</h1>
+    <p>Your personal password manager</p>
+
+    <form id="passwordForm">
+        <input type="text" id="site" placeholder="Website Name" required>
+        <input type="text" id="username" placeholder="Username / Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <div class="strength" id="strengthText"></div>
+        <button type="submit">Save Password</button>
+    </form>
+
+    <h3>Saved Passwords</h3>
+    <div id="passwordList"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

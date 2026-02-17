@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookMySlot - Appointment Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay">
+            <h1>Book Your Appointment Instantly</h1>
+            <p>Fast. Easy. Reliable.</p>
+            <button onclick="scrollToForm()">Book Now</button>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+
+            <div class="card">
+               <img src="https://picsum.photos/600/400?random=1" alt="Doctor Consultation">
+
+
+                <h3>Doctor Consultation</h3>
+                <p>Book medical appointments with certified professionals.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" alt="Salon">
+                <h3>Salon & Spa</h3>
+                <p>Schedule beauty and wellness sessions easily.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Business">
+                <h3>Business Meeting</h3>
+                <p>Plan meetings and consultations professionally.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking" id="bookingForm">
+        <div class="form-container">
+            <h2>Book Appointment</h2>
+            <form onsubmit="return submitForm()">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="date" required>
+                <select required>
+                    <option value="">Select Service</option>
+                    <option>Doctor Consultation</option>
+                    <option>Salon & Spa</option>
+                    <option>Business Meeting</option>
+                </select>
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 BookMySlot | All Rights Reserved</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
