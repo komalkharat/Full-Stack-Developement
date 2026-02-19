@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Background Wallpaper */
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:url("https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg") no-repeat center center/cover;
+    z-index:-1;
+}
+
+/* Container */
+.container{
+    width:750px;
+    max-height:90vh;
+    overflow-y:auto;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(15px);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+    color:white;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#search{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    margin-bottom:15px;
+    outline:none;
+}
+
+/* Category Buttons */
+.categories{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.categories button{
+    margin:5px;
+    padding:8px 15px;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    background:#00c6ff;
+    color:white;
+    transition:0.3s;
+}
+
+.categories button:hover{
+    background:#0072ff;
+    transform:scale(1.1);
+}
+
+/* FAQ Items */
+.faq-item{
+    margin-bottom:10px;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.question{
+    background:rgba(255,255,255,0.2);
+    padding:12px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.question:hover{
+    background:rgba(255,255,255,0.3);
+}
+
+.answer{
+    max-height:0;
+    overflow:hidden;
+    background:rgba(255,255,255,0.1);
+    padding:0 12px;
+    transition:max-height 0.4s ease;
+}
+
+.answer.open{
+    padding:12px;
+    max-height:200px;
+}

@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Background Image */
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:url("https://images.pexels.com/photos/4386158/pexels-photo-4386158.jpeg") no-repeat center center/cover;
+    z-index:-1;
+}
+
+/* Main Container */
+.container{
+    width:750px;
+    max-height:90vh;
+    overflow-y:auto;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+    color:white;
+}
+
+h1, h2{
+    text-align:center;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.balance-box{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+#balance{
+    font-size:40px;
+}
+
+/* Form */
+.form{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.form input, .form select{
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+}
+
+button{
+    grid-column:span 2;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    background:#00c6ff;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0072ff;
+    transform:scale(1.05);
+}
+
+/* Transaction List */
+.transaction-list{
+    margin-top:10px;
+}
+
+.transaction{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    margin-bottom:8px;
+    border-radius:10px;
+    animation:fadeIn 0.3s ease-in-out;
+}
+
+.income{
+    background:rgba(46, 213, 115, 0.7);
+}
+
+.expense{
+    background:rgba(255, 71, 87, 0.7);
+}
+
+.delete-btn{
+    background:white;
+    color:black;
+    padding:5px 8px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:12px;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(5px);}
+    to{opacity:1; transform:translateY(0);}
+}

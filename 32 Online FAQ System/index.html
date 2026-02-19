@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ Hub - Online FAQ System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <h1>FAQ Hub ❓</h1>
+    <p class="subtitle">Find answers instantly</p>
+
+    <input type="text" id="search" placeholder="Search your question..." onkeyup="searchFAQ()">
+
+    <div class="categories">
+        <button onclick="filterCategory('all')">All</button>
+        <button onclick="filterCategory('account')">Account</button>
+        <button onclick="filterCategory('payment')">Payment</button>
+        <button onclick="filterCategory('technical')">Technical</button>
+    </div>
+
+    <div id="faqList" class="faq-list">
+
+        <div class="faq-item account">
+            <div class="question" onclick="toggleAnswer(this)">
+                How do I create an account?
+            </div>
+            <div class="answer">
+                Click on the Sign Up button and fill in your details.
+            </div>
+        </div>
+
+        <div class="faq-item payment">
+            <div class="question" onclick="toggleAnswer(this)">
+                What payment methods are accepted?
+            </div>
+            <div class="answer">
+                We accept credit cards, debit cards, and UPI payments.
+            </div>
+        </div>
+
+        <div class="faq-item technical">
+            <div class="question" onclick="toggleAnswer(this)">
+                Why is the website loading slowly?
+            </div>
+            <div class="answer">
+                Please check your internet connection or clear browser cache.
+            </div>
+        </div>
+
+        <div class="faq-item account">
+            <div class="question" onclick="toggleAnswer(this)">
+                How can I reset my password?
+            </div>
+            <div class="answer">
+                Click on Forgot Password and follow the instructions.
+            </div>
+        </div>
+
+        <div class="faq-item payment">
+            <div class="question" onclick="toggleAnswer(this)">
+                Can I get a refund?
+            </div>
+            <div class="answer">
+                Refunds are processed within 5-7 business days.
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TaskFlow - Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="app-container">
+
+    <h1>TaskFlow 🚀</h1>
+
+    <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter your task...">
+        <select id="priority">
+            <option value="Low">Low Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="High">High Priority</option>
+        </select>
+        <button onclick="addTask()">Add</button>
+    </div>
+
+    <div id="taskList" class="task-list"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

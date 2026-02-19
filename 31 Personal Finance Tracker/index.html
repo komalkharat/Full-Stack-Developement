@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FinTrack - Personal Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <h1>FinTrack 💰</h1>
+    <p class="subtitle">Smart Personal Finance Tracker</p>
+
+    <div class="balance-box">
+        <h2>Total Balance</h2>
+        <h1 id="balance">₹0</h1>
+    </div>
+
+    <div class="form">
+        <input type="text" id="description" placeholder="Description">
+        <input type="number" id="amount" placeholder="Amount">
+        
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+
+        <select id="category">
+            <option>Food</option>
+            <option>Shopping</option>
+            <option>Salary</option>
+            <option>Travel</option>
+            <option>Bills</option>
+            <option>Other</option>
+        </select>
+
+        <button onclick="addTransaction()">Add Transaction</button>
+    </div>
+
+    <h2>Transaction History</h2>
+    <div id="transactionList" class="transaction-list"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
