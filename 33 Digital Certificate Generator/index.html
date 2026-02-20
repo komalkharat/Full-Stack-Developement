@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CertiStudio - Creative Certificate Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+<div class="overlay"></div>
+
+<div class="app">
+
+    <header>
+        <h1>CertiStudio ✨</h1>
+        <p>Create Elegant & Modern Digital Certificates</p>
+    </header>
+
+    <div class="main">
+
+        <div class="form-panel">
+            <h2>Certificate Details</h2>
+
+            <input type="text" id="name" placeholder="Recipient Name">
+            <input type="text" id="course" placeholder="Course / Event">
+            <input type="text" id="issuer" placeholder="Issuer Name">
+
+            <select id="template">
+                <option value="royal">Royal Gold</option>
+                <option value="ocean">Ocean Blue</option>
+                <option value="sunset">Sunset Gradient</option>
+            </select>
+
+            <input type="file" id="signature" accept="image/*">
+
+            <button onclick="generateCertificate()">Generate</button>
+            <button onclick="downloadPDF()">Download PDF</button>
+        </div>
+
+        <div class="preview-panel">
+            <div id="certificate" class="certificate royal">
+
+                <div class="ornament top-left"></div>
+                <div class="ornament top-right"></div>
+                <div class="ornament bottom-left"></div>
+                <div class="ornament bottom-right"></div>
+
+                <div class="cert-content">
+                    <h2>Certificate of Excellence</h2>
+                    <p id="certID"></p>
+
+                    <p>This certificate is proudly presented to</p>
+                    <h1 id="certName">Recipient Name</h1>
+
+                    <p>For outstanding achievement in</p>
+                    <h3 id="certCourse">Course Name</h3>
+
+                    <p id="certDate"></p>
+
+                    <div class="signature-area">
+                        <img id="signPreview">
+                        <p id="certIssuer">Issuer Name</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

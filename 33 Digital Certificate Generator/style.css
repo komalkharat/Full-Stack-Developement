@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Background Image */
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:url("https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg") no-repeat center center/cover;
+    z-index:-2;
+}
+
+.overlay{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,50,0.7));
+    z-index:-1;
+}
+
+.app{
+    width:1200px;
+    color:white;
+}
+
+header{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.main{
+    display:flex;
+    gap:30px;
+}
+
+/* Form Panel */
+.form-panel{
+    width:35%;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(12px);
+    padding:25px;
+    border-radius:20px;
+}
+
+.form-panel input,
+.form-panel select{
+    width:100%;
+    padding:10px;
+    margin-bottom:12px;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border:none;
+    border-radius:8px;
+    background:#ff7e5f;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#feb47b;
+}
+
+/* Preview Panel */
+.preview-panel{
+    width:65%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Certificate */
+.certificate{
+    width:800px;
+    height:500px;
+    padding:40px;
+    border-radius:20px;
+    position:relative;
+    animation:float 4s ease-in-out infinite;
+    text-align:center;
+}
+
+/* Templates */
+.certificate.royal{
+    background:white;
+    border:15px solid gold;
+    color:black;
+}
+
+.certificate.ocean{
+    background:#e0f7fa;
+    border:15px solid #0077b6;
+    color:black;
+}
+
+.certificate.sunset{
+    background:linear-gradient(135deg,#ff9966,#ff5e62);
+    border:15px solid white;
+    color:white;
+}
+
+.cert-content h1{
+    font-size:40px;
+    margin:15px 0;
+}
+
+.signature-area{
+    position:absolute;
+    bottom:40px;
+    right:60px;
+    text-align:center;
+}
+
+.signature-area img{
+    height:50px;
+}
+
+/* Decorative Ornaments */
+.ornament{
+    width:40px;
+    height:40px;
+    border:3px solid gold;
+    position:absolute;
+}
+
+.top-left{ top:15px; left:15px; }
+.top-right{ top:15px; right:15px; }
+.bottom-left{ bottom:15px; left:15px; }
+.bottom-right{ bottom:15px; right:15px; }
+
+/* Floating Animation */
+@keyframes float{
+    0%{ transform:translateY(0px); }
+    50%{ transform:translateY(-10px); }
+    100%{ transform:translateY(0px); }
+}

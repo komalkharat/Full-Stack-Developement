@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NovaSphere Blog CMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Animated Background -->
+<div class="bg-animation"></div>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h2>NovaSphere</h2>
+    <div class="nav-right">
+        <input type="text" id="search" placeholder="Search posts..." onkeyup="searchPosts()">
+        <button onclick="toggleTheme()">🌙</button>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Write. Publish. Inspire.</h1>
+    <p>Your modern static blog platform with powerful CMS.</p>
+</section>
+
+<div class="container">
+
+    <!-- CMS Panel -->
+    <div class="cms">
+        <h2>Create Post</h2>
+        <input type="text" id="title" placeholder="Post Title">
+        <input type="text" id="category" placeholder="Category (Tech, Travel...)">
+        <input type="file" id="image">
+        <textarea id="content" placeholder="Write your content..."></textarea>
+        <button onclick="addPost()">Publish</button>
+    </div>
+
+    <!-- Posts -->
+    <div class="posts-section">
+        <h2>Latest Stories</h2>
+        <div id="posts" class="posts"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
