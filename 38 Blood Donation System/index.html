@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeDrop - Blood Donation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h2 class="logo">🩸 LifeDrop</h2>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Donors</a></li>
+        <li><a href="#">Request Blood</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Donate Blood, Save Lives</h1>
+    <p>Your small act can give someone a second chance.</p>
+    <button onclick="scrollToForm()">Become a Donor</button>
+</section>
+
+<!-- Donation Form -->
+<section class="form-section" id="donorForm">
+    <h2>Blood Donor Registration</h2>
+
+    <form id="form">
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="input-group">
+            <label>Blood Group</label>
+            <select id="blood">
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>City</label>
+            <input type="text" id="city" required>
+        </div>
+
+        <div class="input-group">
+            <label>Mobile Number</label>
+            <input type="tel" id="mobile" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Register Donor</button>
+    </form>
+
+    <p id="message"></p>
+</section>
+
+<footer>
+    <p>© 2026 LifeDrop Blood Donation System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

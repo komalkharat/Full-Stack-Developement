@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveySpark - Online Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h2 class="logo">SurveySpark</h2>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Surveys</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Create Smart Surveys</h1>
+        <p>Collect feedback easily and analyze responses instantly.</p>
+        <button onclick="scrollToForm()">Start Survey</button>
+    </section>
+
+    <!-- Survey Form -->
+    <section class="survey-container" id="surveyForm">
+        <h2>Quick Survey</h2>
+
+        <form id="form">
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Rate our platform</label>
+                <select id="rating">
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Poor</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Your Feedback</label>
+                <textarea id="feedback" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Response</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 SurveySpark | Online Survey Platform</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
