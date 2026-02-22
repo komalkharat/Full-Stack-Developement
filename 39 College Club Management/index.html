@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusClub - Club Management</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h2 class="logo">🎓 CampusClub</h2>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#clubs">Clubs</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#join">Join</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>Manage College Clubs Easily</h1>
+    <p>Join clubs, attend events, and grow your skills.</p>
+    <button onclick="scrollToJoin()">Join a Club</button>
+</section>
+
+<!-- Clubs Section -->
+<section class="clubs" id="clubs">
+    <h2>Our Popular Clubs</h2>
+
+    <div class="club-container">
+        <div class="club-card">
+            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f" alt="">
+            <h3>Tech Club</h3>
+            <p>Explore coding, AI, and hackathons.</p>
+        </div>
+
+        <div class="club-card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
+            <h3>Cultural Club</h3>
+            <p>Dance, music, and cultural events.</p>
+        </div>
+
+        <div class="club-card">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="">
+            <h3>Sports Club</h3>
+            <p>Cricket, football, and tournaments.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Events -->
+<section class="events" id="events">
+    <h2>Upcoming Events</h2>
+
+    <div class="event-box">
+        <p>🚀 Hackathon 2026</p>
+        <span>March 25</span>
+    </div>
+
+    <div class="event-box">
+        <p>🎭 Cultural Fest</p>
+        <span>April 10</span>
+    </div>
+</section>
+
+<!-- Join Form -->
+<section class="join" id="join">
+    <h2>Join a Club</h2>
+
+    <form id="joinForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <select id="club">
+            <option>Tech Club</option>
+            <option>Cultural Club</option>
+            <option>Sports Club</option>
+        </select>
+
+        <button type="submit">Join Now</button>
+    </form>
+
+    <p id="message"></p>
+</section>
+
+<footer>
+    <p>© 2026 CampusClub Management System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

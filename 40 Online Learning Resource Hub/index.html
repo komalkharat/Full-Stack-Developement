@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnHub - Online Learning Resources</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h2 class="logo">📚 LearnHub</h2>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>Upgrade Your Skills Anytime</h1>
+    <p>Access curated learning materials, courses, and tutorials.</p>
+    <button onclick="scrollToResources()">Explore Resources</button>
+</section>
+
+<!-- Resources -->
+<section class="resources" id="resources">
+    <h2>Featured Resources</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4" alt="">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript complete guides.</p>
+            <button>View</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" alt="">
+            <h3>Data Science</h3>
+            <p>Python, ML, and data analysis resources.</p>
+            <button>View</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="">
+            <h3>Interview Prep</h3>
+            <p>Aptitude, DSA, and placement preparation.</p>
+            <button>View</button>
+        </div>
+    </div>
+</section>
+
+<!-- Categories -->
+<section class="categories" id="categories">
+    <h2>Learning Categories</h2>
+
+    <div class="chips">
+        <span>Programming</span>
+        <span>AI & ML</span>
+        <span>Cloud</span>
+        <span>Cyber Security</span>
+        <span>Soft Skills</span>
+    </div>
+</section>
+
+<!-- Subscribe -->
+<section class="subscribe" id="subscribe">
+    <h2>Stay Updated</h2>
+
+    <form id="subForm">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+
+    <p id="message"></p>
+</section>
+
+<footer>
+    <p>© 2026 LearnHub | Online Learning Resource Hub</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

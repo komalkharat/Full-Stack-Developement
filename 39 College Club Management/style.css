@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:url("https://images.unsplash.com/photo-1523580494863-6f3031224c94") no-repeat center/cover;
+    color:white;
+}
+
+/* overlay */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.65);
+    z-index:-1;
+}
+
+/* navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    padding:18px 60px;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(6px);
+}
+
+.logo{color:#00ffd5;}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{color:#00ffd5;}
+
+/* hero */
+.hero{
+    text-align:center;
+    margin-top:80px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero button{
+    margin-top:20px;
+    padding:12px 28px;
+    border:none;
+    border-radius:25px;
+    background:#00ffd5;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* clubs */
+.clubs{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.club-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.club-card{
+    width:260px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.club-card:hover{
+    transform:translateY(-8px);
+}
+
+.club-card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+
+/* events */
+.events{
+    text-align:center;
+    padding:40px;
+}
+
+.event-box{
+    background:rgba(255,255,255,0.08);
+    margin:15px auto;
+    padding:15px;
+    max-width:400px;
+    border-radius:10px;
+}
+
+/* join */
+.join{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.join form{
+    max-width:400px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.join input,
+.join select{
+    padding:10px;
+    border-radius:8px;
+    border:none;
+}
+
+.join button{
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#00ffd5;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:15px;
+    background:rgba(0,0,0,0.5);
+}
