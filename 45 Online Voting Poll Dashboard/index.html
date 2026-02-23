@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoteSphere - Online Voting Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">🗳️ VoteSphere</h2>
+</nav>
+
+<section class="hero">
+    <h1>Online Voting Poll Dashboard</h1>
+    <p>Create polls and watch live voting results.</p>
+</section>
+
+<section class="container">
+
+    <!-- Create Poll -->
+    <div class="card">
+        <h2>Create Poll</h2>
+        <input type="text" id="question" placeholder="Enter poll question">
+        <input type="text" id="option1" placeholder="Option 1">
+        <input type="text" id="option2" placeholder="Option 2">
+        <input type="text" id="option3" placeholder="Option 3">
+        <input type="text" id="option4" placeholder="Option 4">
+        <button onclick="createPoll()">Create Poll</button>
+    </div>
+
+    <!-- Poll Display -->
+    <div class="card">
+        <h2>Live Poll</h2>
+        <div id="pollArea"></div>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 VoteSphere | Online Voting Dashboard</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

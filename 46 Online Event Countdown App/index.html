@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay">
+        <div class="container">
+            <h1>🎉 Tech Fest 2026 🎉</h1>
+            <p class="event-date">March 25, 2026 | 10:00 AM</p>
+
+            <div class="countdown">
+                <div class="box">
+                    <h2 id="days">00</h2>
+                    <span>Days</span>
+                </div>
+                <div class="box">
+                    <h2 id="hours">00</h2>
+                    <span>Hours</span>
+                </div>
+                <div class="box">
+                    <h2 id="minutes">00</h2>
+                    <span>Minutes</span>
+                </div>
+                <div class="box">
+                    <h2 id="seconds">00</h2>
+                    <span>Seconds</span>
+                </div>
+            </div>
+
+            <button onclick="showMessage()">Notify Me</button>
+            <p id="message"></p>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
