@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online PDF Merger Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📄 PDF Merger Tool</h1>
+    <p>Merge multiple PDFs instantly — No uploads, 100% secure.</p>
+
+    <div class="upload-area">
+        <input type="file" id="pdfInput" accept="application/pdf" multiple hidden>
+        <button onclick="document.getElementById('pdfInput').click()">Select PDF Files</button>
+        <p>or drag & drop PDFs here</p>
+    </div>
+
+    <ul id="fileList"></ul>
+
+    <button id="mergeBtn">Merge PDFs</button>
+
+    <a id="downloadLink" style="display:none;" download="merged.pdf">Download Merged PDF</a>
+</div>
+
+<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
