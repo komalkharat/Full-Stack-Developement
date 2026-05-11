@@ -31,7 +31,7 @@ const projects = [
     name: "Footwear Store",
     description: "Modern shoe store with size selection, price & category filters, and cart system.",
     image: "./assets/footwear-store.png",
-    live: "./projects/05-footwear-store/index.html",
+    live: "./05-footwear-store/index.html",
     code: "https://github.com/KrushnaTaur/frontend-ecommerce-projects/tree/main/projects/05-footwear-store"
   },
   {
